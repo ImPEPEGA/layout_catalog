@@ -6,15 +6,15 @@
 
   &__item {
     display: flex;
-    width: 16px;
-    line-height: 16px;
+    width: $starSize;
+    line-height: $starSize;
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &__item:not(:last-child) {
-    margin-right: 4px;
+    margin-right: $starsMarginRight;
   }
 
   &--rating-1 :first-child {

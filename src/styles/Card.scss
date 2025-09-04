@@ -1,7 +1,7 @@
 @import './variables';
 
 .card {
-  width: 200px;
+  width: $cardWidth;
   background: $bgColor;
   box-sizing: border-box;
   border: 1px solid $borderColor;
@@ -97,10 +97,10 @@
     }
 
     &-link:hover {
-      background: $buttonTextColor;
+      background: $bgColor;
       border: 1px solid $buttonColor;
       line-height: 38px;
-      color: $buttonColor;
+      color: $textColorHover;
     }
   }
 

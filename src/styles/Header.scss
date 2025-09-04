@@ -39,6 +39,7 @@
     white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
+    transition: color 0.3s;
   }
 
   &__link:hover {
@@ -50,7 +51,6 @@
   color: $textColorHover;
 
   &::after {
-    // @extend .nav__item, :active, ::after;
     content: '';
     display: block;
     position: relative;
