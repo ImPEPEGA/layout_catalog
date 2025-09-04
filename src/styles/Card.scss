@@ -6,7 +6,7 @@
   box-sizing: border-box;
   border: 1px solid $borderColor;
   border-radius: 5px;
-  transition: 0.3s;
+  transition: transform 0.3s, color 0.3s;
 
   &__img {
     width: auto;
@@ -93,13 +93,13 @@
       text-transform: uppercase;
       font-weight: 700;
       font-size: 14px;
-      transition: 0.3s;
+      transition: background 0.3s, color 0.3s;
     }
 
     &-link:hover {
       background: $bgColor;
-      border: 1px solid $buttonColor;
-      line-height: 38px;
+      // border: 1px solid $buttonColor;
+      // line-height: 38px;
       color: $textColorHover;
     }
   }
