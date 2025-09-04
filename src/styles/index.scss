@@ -1,3 +1,38 @@
+@import './Variables';
+@import './Header';
+@import './Card';
+@import './Stars';
+
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.main {
+  padding: 50px 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  gap: 46px 48px;
+  justify-content: center;
+
+  @media (min-width: 488px) {
+    & {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      grid-template-columns: repeat(3, 200px);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & {
+      grid-template-columns: repeat(4, 200px);
+    }
+  }
 }
